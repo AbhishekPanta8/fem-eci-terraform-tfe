@@ -5,12 +5,13 @@ locals {
     }
   }
   workspace ={
-    "fem-eci-tfe" = {
+    "fem-eci-workspace" = {
       description = "Example description of the workspace"
-      execution_mode = "local"
+      execution_mode = "remote"
       project_id = module.project[
         "fem-eci-project"
       ].id
+      vcs_identifier = "AbhishekPanta8/fem-eci-terraform-tfe"
     }
   }
 }
