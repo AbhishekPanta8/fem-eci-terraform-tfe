@@ -13,5 +13,13 @@ locals {
       ].id
       vcs_identifier = "AbhishekPanta8/fem-eci-terraform-tfe"
     }
+    "fem-eci-github" = {
+      description = "Example workspace for github automation"
+      execution_mode = "local"
+      project_id = module.project[
+        "fem-eci-project"
+      ].id
+      vcs_identifier = "AbhishekPanta8/fem-eci-terraform-tfe"
+    }
   }
 }
