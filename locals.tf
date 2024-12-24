@@ -15,7 +15,7 @@ locals {
     }
     "fem-eci-github" = {
       description = "Example workspace for github automation"
-      execution_mode = "local"
+      execution_mode = "remote"
       project_id = module.project[
         "fem-eci-project"
       ].id
